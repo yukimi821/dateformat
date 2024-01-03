@@ -5,7 +5,7 @@
 A node.js package for PHP style format date.
 
 - No dependencies package
-- Support escape sequence
+- Support escape
 
 ## Installation
 
