@@ -1,0 +1,23 @@
+{
+  "name": "php-date-format",
+  "description": "A node.js package for PHP style format date.",
+  "maintainers": [
+    "Yukimi Yamada <yukimix821@gmail.com>"
+  ],
+  "homepage": "https://github.com/yukimi821/dateformat",
+  "author": "Yukimi Yamada",
+  "contributors": [
+    "Yukimi Yamada <yukimix821@gmail.com>"
+  ],
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">=12.20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yukimi821/dateformat.git"
+  }
+}
