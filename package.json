@@ -12,12 +12,25 @@
   "version": "1.0.0",
   "license": "MIT",
   "type": "module",
-  "main": "lib/index.js",
+  "main": "lib/dateformat.cjs",
   "engines": {
     "node": ">=12.20"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/yukimi821/dateformat.git"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/yukimi821/dateformat/issues"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+  },
+  "keywords": [
+    "date",
+    "format",
+    "php"
+  ]
 }
