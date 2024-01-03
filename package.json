@@ -9,7 +9,7 @@
   "contributors": [
     "Yukimi Yamada <yukimix821@gmail.com>"
   ],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "type": "module",
   "main": "lib/dateformat.cjs",
@@ -26,8 +26,7 @@
   "directories": {
     "lib": "lib"
   },
-  "scripts": {
-  },
+  "scripts": {},
   "keywords": [
     "date",
     "format",
