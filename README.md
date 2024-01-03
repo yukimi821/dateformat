@@ -1,5 +1,7 @@
 # php-date-format
 
+[![NPM](https://nodei.co/npm/php-date-format.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/php-date-format/)
+
 A node.js package for PHP style format date.
 
 - No dependencies package
