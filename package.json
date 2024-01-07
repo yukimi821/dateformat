@@ -26,10 +26,15 @@
   "directories": {
     "lib": "lib"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "mocha"
+  },
   "keywords": [
     "date",
     "format",
     "php"
-  ]
+  ],
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
 }
