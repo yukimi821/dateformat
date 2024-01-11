@@ -69,6 +69,12 @@ describe('dateformat', function() {
   it('should be the next year', function () {
     assert.equal(format('o', new Date('2013-12-31')), '2014');
   });
+  it('should be end of year\'s week number', function () {
+    assert.equal(format('W', new Date('2020-12-31')), '53');
+  });
+  it('should be the next year\'s week number when last year\'s week number is not same', function () {
+    assert.equal(format('W', new Date('2018-12-31')), '01');
+  });
   it('should be before year\s week number', function () {
     assert.equal(format('W', new Date('2023-01-01')), '52');
   });
