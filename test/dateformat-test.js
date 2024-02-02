@@ -63,6 +63,8 @@ describe('dateformat', function() {
       assert.equal(format(key), value);
     });
   });
+
+  // week number and week-numbering year
   it('should be next year\'s week number', function () {
     assert.equal(format('W', new Date('2013-12-31')), '01');
   });
@@ -81,15 +83,31 @@ describe('dateformat', function() {
   it('should be the before year', function () {
     assert.equal(format('o', new Date('2023-01-01')), '2022');
   });
+
+  // English suffix
   it('should be 1st', function () {
-    assert.equal(format('S', new Date('2024-01-01')), 'st');
+    assert.equal(format('jS', new Date('2024-01-01')), '1st');
   });
   it('should be 3rd', function () {
-    assert.equal(format('S', new Date('2024-01-03')), 'rd');
+    assert.equal(format('jS', new Date('2024-01-03')), '3rd');
   });
   it('should be 4th', function () {
-    assert.equal(format('S', new Date('2024-01-04')), 'th');
+    assert.equal(format('jS', new Date('2024-01-04')), '4th');
   });
+  it('should be 11th', function () {
+    assert.equal(format('jS', new Date('2024-01-11')), '11th');
+  });
+  it('should be 21st', function () {
+    assert.equal(format('jS', new Date('2024-01-21')), '21st');
+  });
+  it('should be 24th', function () {
+    assert.equal(format('jS', new Date('2024-01-24')), '24th');
+  });
+  it('should be 31st', function () {
+    assert.equal(format('jS', new Date('2024-01-31')), '31st');
+  });
+
+  // year's sign
   it('should return minus year', function () {
     assert.equal(format('X', new Date('2024-01-01').setYear(-55)), '-0055');
   });
@@ -99,6 +117,8 @@ describe('dateformat', function() {
   it('should return plus sign', function () {
     assert.equal(format('x', new Date('2024-01-01').setYear(10000)), '+10000');
   });
+
+  // summar time
   it('should return summer time flag', function () {
     process.env.TZ = 'Europe/London',
     assert.equal(format('I', new Date('2024-07-01')), '1');
